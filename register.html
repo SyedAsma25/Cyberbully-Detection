@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>registration page</title>
+      <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+ {% include 'header.html' %}
+
+    <div class="container">
+        <h2>User Registeration</h2>
+        <form action="" method="POST">
+            <label>Username:</label>
+            <input type="text" name="UserID" placeholder="Enter full name" required><br><br>
+
+             <label>Email:</label>
+            <input type="text" name="email" placeholder="Enter valid email" required><br><br>
+
+             <label>Mobile_number:</label>
+            <input type="text" name="mobile_number" placeholder="Enter valid number" required><br><br>
+
+
+  <label >Gender:</label>
+  <label><input type="radio" name="gender" value="male"> Male</label>
+  <label><input type="radio" name="gender" value="female"> Female</label>
+  <label><input type="radio" name="gender" value="other"> Other</label>
+
+
+
+            <label>Password:</label>
+            <input type="password" name="password" placeholder="8-character password" required><br><br>
+
+            <input type="submit" value="Register">
+        </form>
+    </div>
+
+    {% include 'footer.html' %}
+</body>

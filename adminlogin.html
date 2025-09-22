@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    {% include 'header.html' %}
+
+    <div class="container">
+        <h2>Admin Login</h2>
+        <form action="" method="POST">
+            <label>Username:</label>
+            <input type="text" name="username" placeholder="Enter full name" required><br><br>
+
+            <label>Password:</label>
+            <input type="password" name="password" placeholder="8-character password" required><br><br>
+
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+    {% include 'footer.html' %}
+</body>
+</html>

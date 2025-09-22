@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cyberbullying Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    {% include 'header.html' %}
+
+    <div class="container">
+        <h2>Welcome to the Cyberbullying Detector platform.</h2>
+        <p>This tool analyzes text input and detects potentially harmful or offensive content using AI.Helping to create a safe environment for you to communicate.  You can type a message into the tool, and it will tell you if the message might be bullying someone</p>
+
+
+        <p>Concerned about online bullying? Visit the <a href="/adminlogin">Admin Portal</a>.</p>
+    </div>
+
+    {% include 'footer.html' %}
+</body>
+</html>

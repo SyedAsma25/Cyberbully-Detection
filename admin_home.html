@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> admin home</title>
+     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+ {% include 'header_admin.html' %}
+<div class="container">
+ <h2> Welcome! admin</h2>
+ <p>Express your concern here... </p>
+    <input type="text" placeholder="enter text here" size>
+
+</div>
+
+    {% include 'footer.html' %}
+</body>
+</html>
